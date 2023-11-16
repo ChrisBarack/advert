@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Skills and talents</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <p id="clock"></p>
+
+    <script>
+    function showTime(){
+        var date = new Date();
+        var h = date.getHours(); // 0 - 23
+        var m = date.getMinutes(); // 0 - 59
+        var s = date.getSeconds(); // 0 - 59
+        
+        if(h == 0){
+            h = 12;
+        }
+        
+        if(h > 12){
+            h = h - 12;
+        }
+        
+        h = (h < 10) ? "0" + h : h;
+        m = (m < 10) ? "0" + m : m;
+        s = (s < 10) ? "0" + s : s;
+        
+        var time = h + ":" + m + ":" + s;
+        document.getElementById("clock").innerText = time;
+        document.getElementById("clock").textContent = time;
+        
+        setTimeout(showTime, 1000);
+        
+    }
+    
+    showTime();
+    </script>
+    <body>
+
+        <div>
+
+
+            
+        </div>
+        <div>     
+    <nav>
+        <div class="skills">
+            <ul>
+                <li>
+                    <a href="index.html"> Homepage</a>
+                    <a href="Childhood.html">Childhood</a>
+                    <a href="Education.html">Education</a>
+                    <a href="Skills and Talents.html">Skills and Talents</a>
+                    <a href="Future aspirations.html">Future aspirations</a>
+                    <a href="Contact Information.html">Contact Information</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+        </div>
+
+        <div>
+
+
+          
+            <style>
+                table,
+                th,
+                td {
+                border: 1px solid black;
+                }
+                    
+                table {
+                border-spacing: 5px;
+                }
+            </style>
+      
+
+                <table style="width:100%">
+                    <tr>
+                        <th>Skills</th>
+                        <th>Language</th>
+                        <th>Level</th>
+                    </tr>
+                    <tr>
+                        <td>Web</td>
+                        <td>Learning</td>
+                        <td>1/10</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Development</td>
+                        <td>Learning</td>
+                        <td>1/10</td>
+                    </tr>
+                    <tr>
+                        <td>Machine Learning</td>
+                        <td>Learning</td>
+                        <td>1/10</td>
+                    </tr>
+                </table>
+            
+            
+            </html>
+            
+        </div>
+
+ 
+</div>
+       
+    </body>
+</html>

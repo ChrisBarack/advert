@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Education</title>
+    </head>
+    <p id="clock"></p>
+
+    <script>
+    function showTime(){
+        var date = new Date();
+        var h = date.getHours(); // 0 - 23
+        var m = date.getMinutes(); // 0 - 59
+        var s = date.getSeconds(); // 0 - 59
+        
+        if(h == 0){
+            h = 12;
+        }
+        
+        if(h > 12){
+            h = h - 12;
+        }
+        
+        h = (h < 10) ? "0" + h : h;
+        m = (m < 10) ? "0" + m : m;
+        s = (s < 10) ? "0" + s : s;
+        
+        var time = h + ":" + m + ":" + s;
+        document.getElementById("clock").innerText = time;
+        document.getElementById("clock").textContent = time;
+        
+        setTimeout(showTime, 1000);
+        
+    }
+    
+    showTime();
+    </script>
+        <link rel="stylesheet" href="style.css">
+        <body>
+            <div>
+                
+    <nav>
+        <div class="Edu">
+            <ul>
+                <li>
+                    <a href="index.html"> Homepage</a>
+                    <a href="Childhood.html">Childhood</a>
+                    <a href="Education.html">Education</a>
+                    <a href="Skills and Talents.html">Skills and Talents</a>
+                    <a href="Future aspirations.html">Future aspirations</a>
+                    <a href="Contact Information.html">Contact Information</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+            </div>
+            <div>
+                <h1>Education </h1>
+                
+                <p>
+                    Zetech University,
+                    
+                    Bachelor of Science in Computer Science. 
+                    
+                    Courses I’ve Taken</p>
+                    <ul>
+                        <li>
+                            Web Development
+                        </li>
+                        <li>
+                            Data structures and algorithms
+                            </li>
+                            <li>
+                            Calculas
+                            </li>
+                            <li>
+                            AI
+
+                        </li>
+                    </ul>
+                   
+                        <h2>
+                                Work Experience </h2>
+                                <ul>
+                                    <li>
+
+   
+
+        Completed Sales School training on Google’s various advertising platforms alongside Heads of Industry, Account Executives, and Account Managers
+                                        </li>
+                                        <li>
+         Supported Google’s largest-spending clients across two rotations specifically focusing on YouTube and Search optimization across $1m+ marketing budgets
+                                        </li>
+                                        <li>
+         Completed a summer-long analysis on Google’s early grad American Sales Associate Program marketing efforts and presented findings to the program head and managers
+    </li>                       
+    </ul>
+    </p>
+                   
+                        <p>
+                            Skills
+Proficient in Microsoft Word, Excel, Powerpoint, Google Suite, Google Ads, Youtube, Hyperion, Salesforce, Canva, Social Media Management, Final Cut Pro, Website Analytics, Project Management, Public Speaking
+                        </p>
+                    
+            </div>
+        </body>
+    </head>
+</html>

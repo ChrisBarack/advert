@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>contact me</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <p id="clock"></p>
+
+    <script>
+    function showTime(){
+        var date = new Date();
+        var h = date.getHours(); // 0 - 23
+        var m = date.getMinutes(); // 0 - 59
+        var s = date.getSeconds(); // 0 - 59
+        
+        if(h == 0){
+            h = 12;
+        }
+        
+        if(h > 12){
+            h = h - 12;
+        }
+        
+        h = (h < 10) ? "0" + h : h;
+        m = (m < 10) ? "0" + m : m;
+        s = (s < 10) ? "0" + s : s;
+        
+        var time = h + ":" + m + ":" + s;
+        document.getElementById("clock").innerText = time;
+        document.getElementById("clock").textContent = time;
+        
+        setTimeout(showTime, 1000);
+        
+    }
+    
+    showTime();
+    </script>
+    <body>
+        <div>
+            
+    <nav>
+        <div class="cont">
+            <ul>
+                <li>
+                    <a href="index.html"> Homepage</a>
+                    <a href="Childhood.html">Childhood</a>
+                    <a href="Education.html">Education</a>
+                    <a href="Skills and Talents.html">Skills and Talents</a>
+                    <a href="Future aspirations.html">Future aspirations</a>
+                    <a href="Contact Information.html">Contact Information</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+        </div>
+        <div>
+            <h1>
+                Contact Me and feel free to drop any suggestions
+            </h1>
+            <p>
+           
+                        
+            Have any questions? Fill out the form and I’ll get you a response soon!
+            Feel free to ask / inquire about anything (school, basketball, internships, music, etc). Hoping to be a resource and be of help in your journey in any way possible.
+
+            Similarly, please use this form or email directly me if your message regards a NIL opportunity.
+
+            kaylacpadilla@gmail.com
+        </div>
+            </p>
+        
+       
+        </div>
+        <div>
+            <form>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email">
+                
+               
+              </form>
+        </div>
+    </div>
+            
+        </div>
+        <p>Which are you?</p>
+        <div class="form">
+            <form>
+                <input type="checkbox" id="Recruter" name="recruter" value="recruter">
+                <label for="vehicle1">Recruter </label><br>
+                <input type="checkbox" id="student" name="student" value="student">
+                <label for="vehicle2"> Student</label><br>
+                <input type="checkbox" id="Other" name="Other" value="Other">
+                <label for="vehicle3"> Other </label>
+                
+              </form>
+        </div>
+       
+
+     
+        <div class="sub">
+ 
+            <label for="subject">Subject</label><br>
+            <textarea id="subject" name="subject" placeholder="Write something.."></textarea><br>
+
+                <input type="submit" value="Submit">
+                    </div>
+    </body>
+</html>
+

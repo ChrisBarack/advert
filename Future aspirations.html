@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Future aspirations
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <p id="clock"></p>
+
+    <script>
+    function showTime(){
+        var date = new Date();
+        var h = date.getHours(); // 0 - 23
+        var m = date.getMinutes(); // 0 - 59
+        var s = date.getSeconds(); // 0 - 59
+        
+        if(h == 0){
+            h = 12;
+        }
+        
+        if(h > 12){
+            h = h - 12;
+        }
+        
+        h = (h < 10) ? "0" + h : h;
+        m = (m < 10) ? "0" + m : m;
+        s = (s < 10) ? "0" + s : s;
+        
+        var time = h + ":" + m + ":" + s;
+        document.getElementById("clock").innerText = time;
+        document.getElementById("clock").textContent = time;
+        
+        setTimeout(showTime, 1000);
+        
+    }
+    
+    showTime();
+    </script>
+    <body>
+        <div>
+           
+    <nav>
+        <div class="Fut">
+            <ul>
+                <li>
+                    <a href="index.html"> Homepage</a>
+                    <a href="Childhood.html">Childhood</a>
+                    <a href="Education.html">Education</a>
+                    <a href="Skills and Talents.html">Skills and Talents</a>
+                    <a href="Future aspirations.html">Future aspirations</a>
+                    <a href="Contact Information.html">Contact Information</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+        </div>
+        <div>
+            <p>
+                My future ambition is to become a Tech Entrepreneur. Leveraging my understanding of the local culture and tech scene, I aspire to start my own tech company in Nairobi. My venture aim is to solve local problems relevant solutions. 
+ 
+            </p>
+        </div>
+    </body>
+</html>

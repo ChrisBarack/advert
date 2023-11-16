@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment</title>
+        <link rel="stylesheet" href="style.css">
+        
+        </style>
+        <p id="clock"></p>
+
+        <script>
+        function showTime(){
+            var date = new Date();
+            var h = date.getHours(); // 0 - 23
+            var m = date.getMinutes(); // 0 - 59
+            var s = date.getSeconds(); // 0 - 59
+            
+            if(h == 0){
+                h = 12;
+            }
+            
+            if(h > 12){
+                h = h - 12;
+            }
+            
+            h = (h < 10) ? "0" + h : h;
+            m = (m < 10) ? "0" + m : m;
+            s = (s < 10) ? "0" + s : s;
+            
+            var time = h + ":" + m + ":" + s;
+            document.getElementById("clock").innerText = time;
+            document.getElementById("clock").textContent = time;
+            
+            setTimeout(showTime, 1000);
+            
+        }
+        
+        showTime();
+        </script>
+        <h1>
+            Chris
+
+        </h1>
+    </head>
+    <body>
+    <nav>
+        <div class="lss">
+            <ul>
+                <li>
+                    <a href="index.html"> Homepage</a>
+                    <a href="Childhood.html">Childhood</a>
+                    <a href="Education.html">Education</a>
+                    <a href="Skills and Talents.html">Skills and Talents</a>
+                    <a href="Future aspirations.html">Future aspirations</a>
+                    <a href="Contact Information.html">Contact Information</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="intro">
+        <h1>
+            About me
+
+        </h1>
+        
+   
+        <p>
+            <img src="download.jpeg" alt="html" style="width:500px;height:300px;">
+        </p>
+
+       
+        <p>
+            Am currently a student of doing bcs, am firm believer in the power of technology to transform lives and societies. She believes that every line of code is an opportunity to make a difference, and she approaches her work with this mindset every day. Jane is committed to using her skills and knowledge to create software solutions that are not only innovative but also ethical and sustainable.
+            In terms of my goals, I aspires to become a leader in my field. My aim's to use my expertise in Computer Science to drive technological innovation and contribute to the advancement of the tech industry. Am also hoping to inspire and mentor the next generation of tech enthusiasts, sharing my passion for technology and encouraging others to explore the endless possibilities it offers. 
+            Moreover, Jane is deeply committed to promoting diversity and inclusion in the tech industry. She believes that diverse perspectives can lead to more innovative solutions, and she strives to create an environment where everyone feels valued and heard.
+          
+        </p>
+    </div>
+    <div id="Education">
+        <div class =" educ">
+            <div class="row">
+                <div class="column"></div>
+            </div>
+        </div>
+    </div>
+
+  
+    
+
+    
+
+    </body>
+</html>
